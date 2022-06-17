@@ -37,7 +37,41 @@ namespace GF3
             graphics = Canvas.CreateGraphics();
         }
 
-        private void Ñanvas_MouseClick(object sender, MouseEventArgs e)
+        private void FigureB_Click(object sender, EventArgs e)
+        {
+            selectedFigure = (sender as Button).Text;
+            Mouse_click = 0;
+            Canvas.Refresh();
+            image.Draw(graphics);
+        }
+
+        private void CustomBrushColorChange(object sender, EventArgs e)
+        {
+            ChoiceColor(CustomC);
+            brushColor = (sender as Button).BackColor;
+        }
+        private void BrushColorChange(object sender, EventArgs e)
+        {
+            brushColor = (sender as Button).BackColor;
+        }
+
+        private void CustomPenColorChange(object sender, EventArgs e)
+        {
+            ChoiceColor(CustomP);
+            penColor = (sender as Button).BackColor;
+        }
+
+        private void PenColorChange(object sender, EventArgs e)
+        {
+            penColor = (sender as Button).BackColor;
+        }
+
+        private void Canvas_Resize(object sender, EventArgs e)
+        {
+            image.Draw(graphics);
+        }
+
+        private void Canvas_MouseClick_1(object sender, MouseEventArgs e)
         {
             if (selectedFigure == cirB.Text)
             {
@@ -132,37 +166,10 @@ namespace GF3
             Mouse_click++;
         }
 
-        private void FigureB_Click(object sender, EventArgs e)
+        private void Canvas_ClientSizeChanged_1(object sender, EventArgs e)
         {
-            selectedFigure = (sender as Button).Text;
-            Mouse_click = 0;
-            Canvas.Refresh();
-            image.Draw(graphics);
-        }
-
-        private void CustomBrushColorChange(object sender, EventArgs e)
-        {
-            ChoiceColor(CustomC);
-            brushColor = (sender as Button).BackColor;
-        }
-        private void BrushColorChange(object sender, EventArgs e)
-        {
-            brushColor = (sender as Button).BackColor;
-        }
-
-        private void CustomPenColorChange(object sender, EventArgs e)
-        {
-            ChoiceColor(CustomP);
-            penColor = (sender as Button).BackColor;
-        }
-
-        private void PenColorChange(object sender, EventArgs e)
-        {
-            penColor = (sender as Button).BackColor;
-        }
-
-        private void Canvas_Resize(object sender, EventArgs e)
-        {
+            graphics.Dispose();
+            graphics = Canvas.CreateGraphics();
             image.Draw(graphics);
         }
 
@@ -175,13 +182,6 @@ namespace GF3
         {
             image.Undo();
             graphics.Clear(Color.White);
-            image.Draw(graphics);
-        }
-
-        private void Ñanvas_ClientSizeChanged(object sender, EventArgs e)
-        {
-            graphics.Dispose();
-            graphics = Canvas.CreateGraphics();
             image.Draw(graphics);
         }
 

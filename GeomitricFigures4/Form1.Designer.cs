@@ -99,10 +99,10 @@ namespace GF3
             this.Canvas.Size = new System.Drawing.Size(1002, 356);
             this.Canvas.TabIndex = 1;
             this.Canvas.TabStop = false;
-            this.Canvas.ClientSizeChanged += new System.EventHandler(this.Сanvas_ClientSizeChanged);
+            this.Canvas.ClientSizeChanged += new System.EventHandler(this.Canvas_ClientSizeChanged_1);
             this.Canvas.VisibleChanged += new System.EventHandler(this.Canvas_VisibleChanged);
             this.Canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLine_Paint);
-            this.Canvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Сanvas_MouseClick);
+            this.Canvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseClick_1);
             this.Canvas.Resize += new System.EventHandler(this.Canvas_Resize);
             // 
             // panelCircle
@@ -139,30 +139,30 @@ namespace GF3
             // lblBackColor_Circle
             // 
             this.lblBackColor_Circle.AutoSize = true;
-            this.lblBackColor_Circle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBackColor_Circle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblBackColor_Circle.Location = new System.Drawing.Point(306, 2);
             this.lblBackColor_Circle.Name = "lblBackColor_Circle";
-            this.lblBackColor_Circle.Size = new System.Drawing.Size(97, 20);
+            this.lblBackColor_Circle.Size = new System.Drawing.Size(126, 20);
             this.lblBackColor_Circle.TabIndex = 5;
             this.lblBackColor_Circle.Text = "Цвет заливки";
             // 
             // lblStrokeColor_Circle
             // 
             this.lblStrokeColor_Circle.AutoSize = true;
-            this.lblStrokeColor_Circle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStrokeColor_Circle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblStrokeColor_Circle.Location = new System.Drawing.Point(183, 2);
             this.lblStrokeColor_Circle.Name = "lblStrokeColor_Circle";
-            this.lblStrokeColor_Circle.Size = new System.Drawing.Size(84, 20);
+            this.lblStrokeColor_Circle.Size = new System.Drawing.Size(108, 20);
             this.lblStrokeColor_Circle.TabIndex = 4;
             this.lblStrokeColor_Circle.Text = "Цвет линии";
             // 
             // lblRadius_Circle
             // 
             this.lblRadius_Circle.AutoSize = true;
-            this.lblRadius_Circle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRadius_Circle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRadius_Circle.Location = new System.Drawing.Point(32, 2);
             this.lblRadius_Circle.Name = "lblRadius_Circle";
-            this.lblRadius_Circle.Size = new System.Drawing.Size(55, 20);
+            this.lblRadius_Circle.Size = new System.Drawing.Size(69, 20);
             this.lblRadius_Circle.TabIndex = 3;
             this.lblRadius_Circle.Text = "Радиус";
             // 
@@ -210,10 +210,10 @@ namespace GF3
             // lblWidth_Rectangle
             // 
             this.lblWidth_Rectangle.AutoSize = true;
-            this.lblWidth_Rectangle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblWidth_Rectangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblWidth_Rectangle.Location = new System.Drawing.Point(67, 0);
             this.lblWidth_Rectangle.Name = "lblWidth_Rectangle";
-            this.lblWidth_Rectangle.Size = new System.Drawing.Size(61, 20);
+            this.lblWidth_Rectangle.Size = new System.Drawing.Size(73, 20);
             this.lblWidth_Rectangle.TabIndex = 9;
             this.lblWidth_Rectangle.Text = "Ширина";
             // 
@@ -234,11 +234,11 @@ namespace GF3
             // lblHeight_Rectangle
             // 
             this.lblHeight_Rectangle.AutoSize = true;
-            this.lblHeight_Rectangle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblHeight_Rectangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHeight_Rectangle.ForeColor = System.Drawing.Color.Black;
             this.lblHeight_Rectangle.Location = new System.Drawing.Point(3, 0);
             this.lblHeight_Rectangle.Name = "lblHeight_Rectangle";
-            this.lblHeight_Rectangle.Size = new System.Drawing.Size(49, 20);
+            this.lblHeight_Rectangle.Size = new System.Drawing.Size(63, 20);
             this.lblHeight_Rectangle.TabIndex = 6;
             this.lblHeight_Rectangle.Text = "Длина";
             // 
@@ -259,10 +259,10 @@ namespace GF3
             // lblBackColor_Rectangle
             // 
             this.lblBackColor_Rectangle.AutoSize = true;
-            this.lblBackColor_Rectangle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBackColor_Rectangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblBackColor_Rectangle.Location = new System.Drawing.Point(306, 0);
             this.lblBackColor_Rectangle.Name = "lblBackColor_Rectangle";
-            this.lblBackColor_Rectangle.Size = new System.Drawing.Size(97, 20);
+            this.lblBackColor_Rectangle.Size = new System.Drawing.Size(126, 20);
             this.lblBackColor_Rectangle.TabIndex = 3;
             this.lblBackColor_Rectangle.Text = "Цвет заливки";
             // 
@@ -276,10 +276,10 @@ namespace GF3
             // lblStrokeColor_Rectangle
             // 
             this.lblStrokeColor_Rectangle.AutoSize = true;
-            this.lblStrokeColor_Rectangle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStrokeColor_Rectangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblStrokeColor_Rectangle.Location = new System.Drawing.Point(183, 0);
             this.lblStrokeColor_Rectangle.Name = "lblStrokeColor_Rectangle";
-            this.lblStrokeColor_Rectangle.Size = new System.Drawing.Size(84, 20);
+            this.lblStrokeColor_Rectangle.Size = new System.Drawing.Size(108, 20);
             this.lblStrokeColor_Rectangle.TabIndex = 1;
             this.lblStrokeColor_Rectangle.Text = "Цвет линии";
             // 
@@ -293,10 +293,10 @@ namespace GF3
             // Texter
             // 
             this.Texter.AutoSize = true;
-            this.Texter.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Texter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Texter.Location = new System.Drawing.Point(55, 9);
             this.Texter.Name = "Texter";
-            this.Texter.Size = new System.Drawing.Size(124, 20);
+            this.Texter.Size = new System.Drawing.Size(158, 20);
             this.Texter.TabIndex = 3;
             this.Texter.Text = "Выберите фигуру";
             // 
@@ -350,10 +350,10 @@ namespace GF3
             // TextScroll
             // 
             this.TextScroll.AutoSize = true;
-            this.TextScroll.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TextScroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TextScroll.Location = new System.Drawing.Point(656, 9);
             this.TextScroll.Name = "TextScroll";
-            this.TextScroll.Size = new System.Drawing.Size(174, 20);
+            this.TextScroll.Size = new System.Drawing.Size(224, 20);
             this.TextScroll.TabIndex = 23;
             this.TextScroll.Text = "Выберите толщину кисти";
             // 
@@ -369,10 +369,10 @@ namespace GF3
             // Textun
             // 
             this.Textun.AutoSize = true;
-            this.Textun.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Textun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Textun.Location = new System.Drawing.Point(505, 9);
             this.Textun.Name = "Textun";
-            this.Textun.Size = new System.Drawing.Size(147, 20);
+            this.Textun.Size = new System.Drawing.Size(191, 20);
             this.Textun.TabIndex = 21;
             this.Textun.Text = "Выберите цвет кисти";
             // 
@@ -423,10 +423,10 @@ namespace GF3
             // Textop
             // 
             this.Textop.AutoSize = true;
-            this.Textop.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Textop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Textop.Location = new System.Drawing.Point(335, 9);
             this.Textop.Name = "Textop";
-            this.Textop.Size = new System.Drawing.Size(164, 20);
+            this.Textop.Size = new System.Drawing.Size(212, 20);
             this.Textop.TabIndex = 16;
             this.Textop.Text = "Выберите цвет заливки";
             // 
